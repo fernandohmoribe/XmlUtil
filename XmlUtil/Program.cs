@@ -20,9 +20,8 @@ namespace XmlUtil
     {
         static void Main(string[] args)
         {
-            var ConnectionStringSqlServer = @"Server=mga-sql010;Database=TesteNEventStore;User Id=des;Password=benner;";
-            /*var ConnectionStringOracle = @"Data Source=(DESCRIPTION =(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST = 192.168.3.236)(PORT = 1521)))
-                                            (CONNECT_DATA =(SERVICE_NAME = mgaora13)));User ID=DESENVMG;Password=bsaude4;";*/
+            var ConnectionStringSqlServer = @"";
+            /*var ConnectionStringOracle = @"";*/
 
             var TableWatcher = new TableWatcherStrategy<Nota>(new TableWatcherSqlServer<Nota>(ConnectionStringSqlServer));
             try

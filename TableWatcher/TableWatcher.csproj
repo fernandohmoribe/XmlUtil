@@ -47,8 +47,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\AtributoBanco.cs" />
-    <Compile Include="ITableWatcher.cs" />
+    <Compile Include="AtributoBanco.cs" />
+    <Compile Include="Base\TableWatcherBase.cs" />
+    <Compile Include="Base\ITableWatcher.cs" />
     <Compile Include="TableWatcherSqlOracle.cs" />
     <Compile Include="TableWatcherStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

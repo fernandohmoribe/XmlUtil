@@ -11,17 +11,16 @@ using TableWatcher.Base;
 
 namespace TableWatcher
 {
-    public class TableWatcherSqlServer<T> : ITableWatcher<T> where T : class
+    public class TableWatcherSqlServer<T> : TableWatcherBase<T>, ITableWatcher<T> where T : class
     {
         public readonly String ConnectionString;
         private SqlTableDependency<T> Dependency;
-
-        private ModelToTableMapper<T> mapper;
 
         public TableWatcherSqlServer(String connectionString)
         {
             ConnectionString = connectionString;
             MapearEntidade();
+            //CamposUpdate();
         }
 
         public void InitializeTableWatcher()
@@ -68,38 +67,7 @@ namespace TableWatcher
             }
         }
 
-        private void MapearEntidade()
-        {
-            mapper = new ModelToTableMapper<T>();
-
-            foreach (var prop in GetValues())
-            {
-                mapper.AddMapping(prop.Key, prop.Value);
-            }
-        }
-
-        public static Dictionary<PropertyInfo, string> GetValues()
-        {
-            Dictionary<PropertyInfo, string> valores = new Dictionary<PropertyInfo, string>();
-
-           
-            PropertyInfo[] props = typeof(T).GetProperties();
-            foreach (PropertyInfo prop in props)
-            {
-                object[] attrs = prop.GetCustomAttributes(true);
-                foreach (object attr in attrs)
-                {
-                    var authAttr = attr as AtributoBanco;
-                    if (authAttr != null)
-                    {
-                        var auth = authAttr.NomeBanco;
-                        valores.Add(prop, auth);
-                    }
-                }
-            }
-
-            return valores;
-        }
+     
 
     }
 }

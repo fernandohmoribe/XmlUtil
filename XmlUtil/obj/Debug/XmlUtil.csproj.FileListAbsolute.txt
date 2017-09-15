@@ -14,3 +14,6 @@ D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\BennerXmlUtil\bin\Debug\NEventS
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\BennerXmlUtil\obj\Debug\XmlUtil.csprojResolveAssemblyReference.cache
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\BennerXmlUtil\obj\Debug\BennerXmlUtil.exe
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\BennerXmlUtil\obj\Debug\BennerXmlUtil.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\BennerXmlUtil.exe.config
+D:\Projetos de Teste\XmlUtil\XmlUtil\obj\Debug\BennerXmlUtil.exe
+D:\Projetos de Teste\XmlUtil\XmlUtil\obj\Debug\BennerXmlUtil.pdb
