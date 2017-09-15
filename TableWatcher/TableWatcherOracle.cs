@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TableDependency.Enums;
 using TableDependency.SqlClient;
+using TableWatcher.Base;
 
 namespace TableWatcher
 {
-    public class TableWatcherSqlOracle<T> : ITableWatcher<T> where T : class
+    public class TableWatcherOracle<T> : ITableWatcher<T> where T : class
     {
         public readonly String ConnectionString; 
-        public TableWatcherSqlOracle(String connectionString)
+        public TableWatcherOracle(String connectionString)
         {
             ConnectionString = connectionString;
         }
