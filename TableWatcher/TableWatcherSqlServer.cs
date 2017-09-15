@@ -11,33 +11,32 @@ using TableWatcher.Base;
 
 namespace TableWatcher
 {
-    public class TableWatcherSqlServer<T> : TableWatcherBase<T>, ITableWatcher<T> where T : class
+    public sealed class TableWatcherSqlServer<T> : TableWatcherBase<T>, ITableWatcher<T> where T : class
     {
         public readonly String ConnectionString;
-        private SqlTableDependency<T> Dependency;
+        private SqlTableDependency<T> _dependency;
 
         public TableWatcherSqlServer(String connectionString)
         {
             ConnectionString = connectionString;
             MapearEntidade();
-            //CamposUpdate();
         }
 
         public void InitializeTableWatcher()
         {
-            Dependency = new SqlTableDependency<T>(ConnectionString, typeof(T).Name, mapper);
-            Dependency.OnChanged += OnChanged;
-            Dependency.OnError += OnError;
+            _dependency = new SqlTableDependency<T>(ConnectionString, typeof(T).Name, mapper, (IList<string>)null, DmlTriggerType.All, true, typeof(T).Name + "ESOCIAL");
+            _dependency.OnChanged += OnChanged;
+            _dependency.OnError += OnError;
         }
 
         public void StartTableWatcher()
         {
-            Dependency.Start();
+            _dependency.Start();
         }
 
         public void StopTableWatcher()
         {
-            Dependency.Stop();
+            _dependency.Stop();
         }
 
         public void OnError(object sender, TableDependency.EventArgs.ErrorEventArgs e)
@@ -49,7 +48,7 @@ namespace TableWatcher
         {
             if (e.ChangeType != ChangeType.None)
             {
-                PropertyInfo propInfo = e.Entity.GetType().GetProperty("GuidID");
+                PropertyInfo propInfo = e.Entity.GetType().GetProperty("Handle");
                 object itemValue = propInfo.GetValue(e.Entity, null);
 
                 switch (e.ChangeType)

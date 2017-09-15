@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TableWatcher;
 using TableWatcher.Base;
 
 namespace XmlUtil.Classes
@@ -10,10 +11,10 @@ namespace XmlUtil.Classes
     public class Nota
     {
         [AtributoBanco("Handle")]
-        public string GuidID { get; set; }
+        public string Handle { get; set; }
 
         [AtributoBanco("NumeroNota")]
-        public string Numero { get; set; }
+        public string NumeroNota { get; set; }
 
         public string Conta { get; set; }
 
@@ -28,8 +29,8 @@ namespace XmlUtil.Classes
         {
             Random objRandom = new Random();
 
-            GuidID = Guid.NewGuid().ToString();
-            Numero = "NumeroNota" + GuidID;
+            Handle = Guid.NewGuid().ToString();
+            NumeroNota = "NumeroNota" + Handle;
             Items = new List<NotaItem>();
             for (int i = 0; i < 3; i++)
             {

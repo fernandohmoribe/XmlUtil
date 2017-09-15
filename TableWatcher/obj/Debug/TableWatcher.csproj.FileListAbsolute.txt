@@ -5,3 +5,12 @@ D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\TableWatcher\bin\Debug\TableDep
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\TableWatcher\obj\Debug\TableWatcher.csprojResolveAssemblyReference.cache
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\TableWatcher\obj\Debug\TableWatcher.dll
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\TableWatcher\obj\Debug\TableWatcher.pdb
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableWatcher.dll
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableWatcher.pdb
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableDependency.dll
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableDependency.SqlClient.dll
+D:\Projetos de Teste\XmlUtil\TableWatcher\obj\Debug\TableWatcher.csprojResolveAssemblyReference.cache
+D:\Projetos de Teste\XmlUtil\TableWatcher\obj\Debug\TableWatcher.dll
+D:\Projetos de Teste\XmlUtil\TableWatcher\obj\Debug\TableWatcher.pdb
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableDependency.SqlClient.pdb
+D:\Projetos de Teste\XmlUtil\TableWatcher\bin\Debug\TableDependency.pdb

@@ -20,9 +20,7 @@ namespace XmlUtil
     {
         static void Main(string[] args)
         {
-            /*";*/
-
-            WatcherSqlOracle();
+          //  WatcherSqlOracle();
             WatcherSqlServer();
         }
 

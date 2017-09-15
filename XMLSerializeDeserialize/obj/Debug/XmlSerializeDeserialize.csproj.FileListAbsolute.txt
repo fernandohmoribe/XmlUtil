@@ -5,3 +5,8 @@ D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\XMLSerializeDeserialize\obj\Deb
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\XMLSerializeDeserialize\bin\Debug\TableDependency.dll
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\XMLSerializeDeserialize\bin\Debug\TableDependency.SqlClient.dll
 D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\XMLSerializeDeserialize\obj\Debug\XmlSerializeDeserialize.csprojResolveAssemblyReference.cache
+D:\Projetos de Teste\XmlUtil\XMLSerializeDeserialize\obj\Debug\XmlSerializeDeserialize.csprojResolveAssemblyReference.cache
+D:\Projetos de Teste\XmlUtil\XMLSerializeDeserialize\obj\Debug\XMLSerializeDeserialize.dll
+D:\Projetos de Teste\XmlUtil\XMLSerializeDeserialize\obj\Debug\XMLSerializeDeserialize.pdb
+D:\Projetos de Teste\XmlUtil\XMLSerializeDeserialize\bin\Debug\XMLSerializeDeserialize.dll
+D:\Projetos de Teste\XmlUtil\XMLSerializeDeserialize\bin\Debug\XMLSerializeDeserialize.pdb

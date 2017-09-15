@@ -17,3 +17,15 @@ D:\Projetos de Teste\BennerXmlUtil\BennerXmlUtil\BennerXmlUtil\obj\Debug\BennerX
 D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\BennerXmlUtil.exe.config
 D:\Projetos de Teste\XmlUtil\XmlUtil\obj\Debug\BennerXmlUtil.exe
 D:\Projetos de Teste\XmlUtil\XmlUtil\obj\Debug\BennerXmlUtil.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\obj\Debug\XmlUtil.csprojResolveAssemblyReference.cache
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\BennerXmlUtil.exe
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\BennerXmlUtil.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.SqlClient.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableWatcher.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\XMLSerializeDeserialize.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableWatcher.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\XMLSerializeDeserialize.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.SqlClient.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.pdb

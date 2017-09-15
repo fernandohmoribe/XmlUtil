@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using TableDependency;
+using TableDependency.Mappers;
 
 namespace TableWatcher.Base
 {
@@ -17,7 +18,7 @@ namespace TableWatcher.Base
 
             foreach (var prop in GetValues())
             {
-                mapper.AddMapping(prop.Key, prop.Value);
+                mapper.AddMapping(c => prop.Key, prop.Value);
             }
         }
 
