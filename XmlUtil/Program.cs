@@ -29,7 +29,7 @@ namespace XmlUtil
 
         private static void WatcherSqlServer()
         {
-            var ConnectionStringSqlServer = @"Server=mga-sql010;Database=TesteNEventStore;User Id=des;Password=benner;";
+            var ConnectionStringSqlServer = @"";
             var TableWatcher = new TableWatcherStrategy<Nota>(new TableWatcherSqlServer<Nota>(ConnectionStringSqlServer));
             try
             {
@@ -51,8 +51,7 @@ namespace XmlUtil
 
         private static void WatcherSqlOracle()
         {
-            var ConnectionStringOracle = @"Data Source=(DESCRIPTION =(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST = 192.168.3.236)(PORT = 1521)))
-                                          (CONNECT_DATA =(SERVICE_NAME = mgaora13)));User ID=DESENVMG;Password=bsaude4;";
+            var ConnectionStringOracle = @"";
             var TableWatcher = new TableWatcherStrategy<Nota>(new TableWatcherOracle<Nota>(ConnectionStringOracle));
             try
             {
