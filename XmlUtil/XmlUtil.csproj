@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DependencyAction.cs" />
+    <Compile Include="Classes\Abrev.cs" />
     <Compile Include="Classes\Nota.cs" />
     <Compile Include="Classes\NotaItem.cs" />
     <Compile Include="Program.cs" />

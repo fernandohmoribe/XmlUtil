@@ -13,6 +13,7 @@ using TableDependency.Enums;
 using TableDependency.SqlClient;
 using TableWatcher;
 using XMLSerializeDeserialize;
+using TableDependency.Mappers;
 
 namespace XmlUtil
 {
@@ -20,8 +21,8 @@ namespace XmlUtil
     {
         static void Main(string[] args)
         {
-          //  WatcherSqlOracle();
-            WatcherSqlServer();
+            WatcherSqlOracle();
+            //WatcherSqlServer();
         }
 
 
@@ -50,7 +51,8 @@ namespace XmlUtil
         private static void WatcherSqlOracle()
         {
             var ConnectionStringOracle = @"";
-            var TableWatcher = new TableWatcherStrategy<Nota>(new TableWatcherOracle<Nota>(ConnectionStringOracle));
+            var TableWatcher = new TableWatcherStrategy<Abrev>(new TableWatcherOracle<Abrev>(ConnectionStringOracle));
+
             try
             {
                 TableWatcher.InitializeTableWatcher();

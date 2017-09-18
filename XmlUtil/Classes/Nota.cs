@@ -11,7 +11,7 @@ namespace XmlUtil.Classes
     public class Nota
     {
         [AtributoBanco("Handle")]
-        public string Handle { get; set; }
+        public int Handle { get; set; }
 
         [AtributoBanco("NumeroNota")]
         public string NumeroNota { get; set; }
@@ -29,7 +29,7 @@ namespace XmlUtil.Classes
         {
             Random objRandom = new Random();
 
-            Handle = Guid.NewGuid().ToString();
+            Handle = objRandom.Next();
             NumeroNota = "NumeroNota" + Handle;
             Items = new List<NotaItem>();
             for (int i = 0; i < 3; i++)

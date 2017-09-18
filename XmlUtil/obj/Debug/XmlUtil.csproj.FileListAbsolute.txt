@@ -29,3 +29,6 @@ D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableWatcher.pdb
 D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\XMLSerializeDeserialize.pdb
 D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.SqlClient.pdb
 D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.OracleClient.dll
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.OracleClient.pdb
+D:\Projetos de Teste\XmlUtil\XmlUtil\bin\Debug\TableDependency.OracleClient.dll.config

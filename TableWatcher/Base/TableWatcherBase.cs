@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace TableWatcher.Base
 
             foreach (var prop in GetValues())
             {
-                mapper.AddMapping(c => prop.Key, prop.Value);
+                mapper.AddMapping(prop.Key, prop.Value);
             }
         }
 
