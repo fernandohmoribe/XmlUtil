@@ -1,19 +1,6 @@
 ﻿using XmlUtil.Classes;
 using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Serialization;
-using TableDependency;
-using TableDependency.Enums;
-using TableDependency.SqlClient;
 using TableWatcher;
-using XMLSerializeDeserialize;
-using TableDependency.Mappers;
 
 namespace XmlUtil
 {
@@ -50,8 +37,9 @@ namespace XmlUtil
 
         private static void WatcherSqlOracle()
         {
-            var ConnectionStringOracle = @"";
-            var TableWatcher = new TableWatcherStrategy<Abrev>(new TableWatcherOracle<Abrev>(ConnectionStringOracle));
+            var ConnectionStringOracle = @"Data Source=(DESCRIPTION =(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST = 192.168.3.236)(PORT = 1521)))
+                                          (CONNECT_DATA =(SERVICE_NAME = mgaora13)));User ID=DESENVMG;Password=bsaude4;";
+            var TableWatcher = new TableWatcherStrategy<Nota>(new TableWatcherOracle<Nota>(ConnectionStringOracle));
 
             try
             {

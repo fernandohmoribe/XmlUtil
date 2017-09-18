@@ -13,6 +13,8 @@ namespace TableWatcher.Base
     public abstract class TableWatcherBase<T> where T : class
     {
         protected ModelToTableMapper<T> mapper;
+        protected String nomeEntidade = typeof(T).Name.ToUpper();
+
         protected virtual void MapearEntidade()
         {
             mapper = new ModelToTableMapper<T>();

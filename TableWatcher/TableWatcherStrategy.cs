@@ -11,9 +11,9 @@ namespace TableWatcher
     {
         private ITableWatcher<T> TableWatcherAbstract;
 
-        public TableWatcherStrategy(ITableWatcher<T> pTableWatcherAbstract)
+        public TableWatcherStrategy(ITableWatcher<T> tableWatcherAbstract)
         {
-            TableWatcherAbstract = pTableWatcherAbstract;
+            TableWatcherAbstract = tableWatcherAbstract;
         }
 
         public void InitializeTableWatcher()
